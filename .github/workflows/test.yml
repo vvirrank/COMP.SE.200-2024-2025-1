@@ -27,8 +27,8 @@ jobs:
       run: npm install
 
     - name: Run tests
-      if: success() || failure()
       run: npm run testcov
 
     - name: Coveralls
+      if: success() || failure()
       uses: coverallsapp/github-action@v2
