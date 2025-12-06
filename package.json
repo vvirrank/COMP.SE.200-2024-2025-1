@@ -6,8 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "testcov": "c8 -x test/ -x src/.internal/ -reporter=lcov mocha",
-    "testcovfull": "c8 --all --src src/ -x test/ -x src/.internal/ -reporter=lcov mocha"
+    "testcov": "c8 -x test/ -x src/.internal/ --reporter=text mocha",
+    "testcovfull": "c8 --all --src src/ -x test/ -x src/.internal/ --reporter=text mocha",
+    "testcovlcov": "c8 -x test/ -x src/.internal/ --reporter=lcov mocha",
+    "testcovlcovfull": "c8 --all --src src/ -x test/ -x src/.internal/ --reporter=lcov mocha"
   },
   "author": "",
   "license": "MIT",

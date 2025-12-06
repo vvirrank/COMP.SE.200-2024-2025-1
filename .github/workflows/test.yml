@@ -27,7 +27,7 @@ jobs:
       run: npm install
 
     - name: Run tests
-      run: npm run testcov
+      run: npm run testcovlcovfull
 
     - name: Coveralls
       if: success() || failure()
