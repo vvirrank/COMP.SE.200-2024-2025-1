@@ -24,6 +24,10 @@ describe("endsWith tests", () => {
         it("should return false when strings swapped", () => {
             expect(endsWith("cde", "abcde")).to.equal(false);
         })
+
+        it("should treat undefined string as empty", () => {
+            expect(endsWith(undefined, "a")).to.equal(false);
+        })
     })
 
     describe("with position", () => {

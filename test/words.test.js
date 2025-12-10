@@ -44,6 +44,10 @@ describe("words tests", () => {
         it("should split camel case sentences", () => {
             expect(words("ThereAreThreeRocks")).to.have.same.members(["There", "Are", "Three", "Rocks"]);
         })
+
+        it("should treat undefined string as empty", () => {
+            expect(words(undefined)).to.have.same.members([]);
+        })
     })
 
     describe("with pattern", () => {

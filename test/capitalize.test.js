@@ -18,4 +18,8 @@ describe("capitalize tests", () => {
     it("should capitalize and uncapitalize non-ascii letters", () => {
         expect(capitalize("äÄh")).to.equal("Ääh");
     })
+
+    it("should treat undefined string as empty", () => {
+        expect(capitalize(undefined)).to.equal("");
+    })
 })
