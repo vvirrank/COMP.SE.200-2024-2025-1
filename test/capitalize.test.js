@@ -1,7 +1,7 @@
 import { expect } from "chai"
 import capitalize from "../src/capitalize.js"
 
-describe("capitalizeTests", () => {
+describe("capitalize tests", () => {
 
     it("should return the input string when already correctly capitalized", () => {
         expect(capitalize("There is a tree.")).to.equal("There is a tree.");

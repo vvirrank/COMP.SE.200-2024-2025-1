@@ -1,7 +1,7 @@
 import { expect } from "chai"
 import endsWith from "../src/endsWith.js"
 
-describe("endsWithTests", () => {
+describe("endsWith tests", () => {
 
     describe("without position", () => {
 

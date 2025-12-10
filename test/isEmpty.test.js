@@ -6,7 +6,7 @@ function isArgumentsEmpty() {
     return isEmpty(arguments);
 }
 
-describe("isEmptyTests", () => {
+describe("isEmpty tests", () => {
 
     it("should return true for null", () => {
         expect(isEmpty(null)).to.equal(true);

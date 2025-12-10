@@ -1,7 +1,7 @@
 import { expect } from "chai"
 import words from "../src/words.js"
 
-describe("wordsTests", () => {
+describe("words tests", () => {
 
     describe("without pattern", () => {
 
