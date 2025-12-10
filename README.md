@@ -27,5 +27,10 @@ npm run testcovfull
 ```
 In case you only want coverage reports on files that are being tested, instead run the below command. This is mostly useful when developing or improving tests as it provides a more compact coverage report.
 ```
-nprm run testcov
+npm run testcov
+```
+
+The repository also contains an ai generated test suite. These tests are excluded from everything by default. This suite can be explicitly run with the command
+````
+npm run test:ai
 ```
